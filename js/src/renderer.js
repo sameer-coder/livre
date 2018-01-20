@@ -6,7 +6,7 @@ const tocBuilder = require('./lib/tocBuilder');
 const recentlyOpenedBuilder = require('./lib/recentlyOpenedBuilder');
 const findResultsBuilder = require('./lib/findResultsBuilder');
 
-const DEFAULT_FONT_SIZE = 1.2;
+const DEFAULT_FONT_SIZE = 1.4;
 const LOADING_HTML =
     '<div class="findLoading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><span class="sr-only">Loading...</span></div>';
 
@@ -52,7 +52,13 @@ const loadBook = function(bookPath) {
     }
     Book = ePub({
         styles: {
-            'font-size': DEFAULT_FONT_SIZE + 'rem'
+            'font-size': DEFAULT_FONT_SIZE + 'rem',
+            'color': "#333333",
+            'font-family' : 'freight-text-pro',
+            'font-style' : 'normal',
+            'font-weight' : '300',
+            'font-size' : '21px',
+            'src': "url('../fonts/FreightTextProLight-Regular.otf') format('otf')",
         }
     });
 

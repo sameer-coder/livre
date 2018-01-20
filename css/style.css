@@ -1,21 +1,19 @@
 /* open-sans-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'freight-text-pro';
   font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'),
-       url('../fonts/open-sans-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/open-sans-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 300;
+  src: url('../fonts/FreightTextProLight-Regular.otf') format('otf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       /* url('../fonts/open-sans-v13-latin-regular.woff') format('woff'); Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-italic - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'freight-text-pro';
   font-style: italic;
-  font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'),
-       url('../fonts/open-sans-v13-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/open-sans-v13-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 300;
+  src: url('../fonts/FreightTextProLight-Italic.otf') format('otf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       /* url('../fonts/open-sans-v13-latin-italic.woff') format('woff'); Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 ::-webkit-scrollbar {
@@ -36,8 +34,8 @@
 
 html {
     cursor: default;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'arial';
+    font-size: 1.4em;
 }
 
 #app {
@@ -61,6 +59,14 @@ html {
     width: 80%;
     height: 80%;
     margin: auto;
+
+    background-color: #fff;
+	color: #333;
+	font-family: 'freight-text-pro', serif;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0;
 }
 
 #start-page {
@@ -225,7 +231,7 @@ html {
 }
 
 #findInput {
-    font-family: "FontAwesome", "Open Sans";
+    font-family: "freight-text-pro";
     line-height: 2;
     font-size: 1.2rem;
     width: 99%;
@@ -297,4 +303,15 @@ html {
 
 #page-right {
     margin-right: 40px;
+}
+
+
+.EB02BodyTextFullOut{
+    font-family: 'freight-text-pro';
+    font-size: 1.4em;
+}
+
+.EB03BodyTextIndented{
+    font-family: 'freight-text-pro';
+    font-size: 1.4em;
 }
